@@ -1,0 +1,17 @@
+{
+    "name": "CompanyCam-Project",
+    "version": "1.0.1",
+    "description": "Cypress with Cucumber and BDD",
+    "scripts": {
+        "cy:open": "cypress open",
+        "cy:tests": "cypress run"
+    },
+    "author": "Chanse Strode",
+    "dependencies": {
+        "cypress": "3.8.3",
+        "cypress-cucumber-preprocessor": "^2.0.1"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true
+    }
+}
