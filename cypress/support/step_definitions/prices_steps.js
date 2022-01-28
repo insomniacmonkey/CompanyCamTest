@@ -21,7 +21,7 @@ Then('I view the {string} monthly text', text => {
     PricesPage.getProColumnPricePlanInfo(text)
 })
 
-Then('I view the {string} column text', text => {
+Then('I verify the {string} text', text => {
     PricesPage.getProColumnPlanDetails(text)
 })
 

@@ -12,8 +12,32 @@ Feature: Verify Pricing Page
         Then I view the "per user" monthly text
         Then I view the "per month" monthly text
         Then I view the "USD" monthly text
-        Then I view the "250 (Billed Per User)" column text
-        Then I view the "Unlimited Projects" column text
+    
+    Scenario Outline: 
+        Then I verify the <column> text
+        Examples:
+        | column |
+        | "250 (Billed Per User)" |
+        | "Unlimited Projects" |
+        | "Unlimited Photos" |
+        | "Web, iOS, & Android" |
+        | "Add Text & Drawings" |
+        | "Voice Notes" |
+        | "Photo Tags" |
+        | "Project Labels" |
+        | "Photo Comments" |
+        | "Scan Documents" |
+        | "Set User Permissions" |
+        | "Invite Guest Users" |
+        | "Upload Photos" |
+        | "Take Videos" |
+        | "Photo Reports" |
+        | "Before & After Cam" |
+        | "Project Collaboration" |
+        | "Photo Galleries" |
+        | "Timeline Galleries" |
+        | "API Access" |
+        | "Integrations" |
     
     Scenario: Pro annual pricing and content
         Given I open the pricing page
